@@ -1,5 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export const LabCard = () => {
   return (
@@ -12,9 +18,18 @@ export const LabCard = () => {
         />
         <span className="text-lg font-medium">MARKIIlab</span>
       </div>
-      <Button variant="ghost" size="icon">
-        <ChevronDown className="w-5 h-5" />
-      </Button>
+      <DropdownMenu>
+        <DropdownMenuTrigger asChild>
+          <Button variant="ghost" size="icon">
+            <ChevronDown className="w-5 h-5" />
+          </Button>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent align="end" className="w-48">
+          <DropdownMenuItem>Ver detalles</DropdownMenuItem>
+          <DropdownMenuItem>Editar laboratorio</DropdownMenuItem>
+          <DropdownMenuItem className="text-red-600">Eliminar</DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
     </div>
   );
 };
