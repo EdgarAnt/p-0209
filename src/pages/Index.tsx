@@ -18,9 +18,8 @@ const Index = () => {
             <LabCard />
           </section>
 
-          <section className="space-y-4">
+          <section className="grid gap-6">
             <TankCard />
-            <div className="h-4 bg-blue-500 rounded-lg" aria-hidden="true" />
             <CategoryList />
           </section>
         </main>
