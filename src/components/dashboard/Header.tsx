@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
+import { SidebarTrigger } from "@/components/ui/sidebar";
 
 export const Header = () => {
   return (
@@ -12,9 +13,9 @@ export const Header = () => {
         />
         <h1 className="text-xl font-semibold">Dashboard</h1>
       </div>
-      <Button variant="ghost" size="icon">
+      <SidebarTrigger>
         <Menu className="w-6 h-6" />
-      </Button>
+      </SidebarTrigger>
     </header>
   );
 };
