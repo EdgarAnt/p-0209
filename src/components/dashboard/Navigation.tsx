@@ -18,7 +18,7 @@ const menuItems = [
 
 export const Navigation = () => {
   return (
-    <Sidebar>
+    <Sidebar side="right" variant="floating">
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel>Menú</SidebarGroupLabel>
