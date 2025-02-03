@@ -14,10 +14,12 @@ const Index = () => {
           <LabCard />
         </section>
 
-        <section className="space-y-4">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <TankCard />
-          <div className="h-4 bg-blue-500 rounded-lg" aria-hidden="true" />
-          <CategoryList />
+          <div className="space-y-4">
+            <div className="h-4 bg-blue-500 rounded-lg" aria-hidden="true" />
+            <CategoryList />
+          </div>
         </section>
       </main>
     </div>
