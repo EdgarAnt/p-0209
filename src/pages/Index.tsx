@@ -2,23 +2,30 @@ import { Header } from "@/components/dashboard/Header";
 import { LabCard } from "@/components/dashboard/LabCard";
 import { TankCard } from "@/components/dashboard/TankCard";
 import { CategoryList } from "@/components/dashboard/CategoryList";
+import { AccountSelector } from "@/components/dashboard/AccountSelector";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#F1F0FB]">
       <Header />
       
-      <main className="container mx-auto px-4 py-6 space-y-6">
-        <section>
-          <h2 className="text-2xl font-semibold mb-4">Good Evening, Tony!</h2>
-          <LabCard />
-        </section>
+      <main className="container mx-auto px-6 py-8">
+        <div className="space-y-8">
+          {/* Greeting and Account Selector */}
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
+            <h2 className="text-3xl font-bold text-gray-800">Good Evening, Tony!</h2>
+            <AccountSelector />
+          </div>
 
-        <section className="space-y-4">
-          <TankCard />
-          <div className="h-4 bg-blue-500 rounded-lg" aria-hidden="true" />
-          <CategoryList />
-        </section>
+          {/* Lab Card */}
+          <LabCard />
+
+          {/* Tank Grid */}
+          <div className="grid md:grid-cols-2 gap-6">
+            <TankCard />
+            <CategoryList />
+          </div>
+        </div>
       </main>
     </div>
   );
