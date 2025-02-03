@@ -2,6 +2,7 @@ import { Header } from "@/components/dashboard/Header";
 import { LabCard } from "@/components/dashboard/LabCard";
 import { TankCard } from "@/components/dashboard/TankCard";
 import { CategoryList } from "@/components/dashboard/CategoryList";
+import { AccountSelector } from "@/components/dashboard/AccountSelector";
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
           {/* Greeting and Account Selector */}
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
             <h2 className="text-3xl font-bold text-gray-800">Good Evening, Tony!</h2>
+            <AccountSelector />
           </div>
 
           {/* Lab Card */}
