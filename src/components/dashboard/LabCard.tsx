@@ -27,7 +27,7 @@ export const LabCard = () => {
         <DropdownMenuContent align="end" className="w-48">
           <DropdownMenuItem>Ver detalles</DropdownMenuItem>
           <DropdownMenuItem>Editar laboratorio</DropdownMenuItem>
-          <DropdownMenuItem className="text-red-600">Eliminar</DropdownMenuItem>
+          <DropdownMenuItem>Eliminar</DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
     </div>

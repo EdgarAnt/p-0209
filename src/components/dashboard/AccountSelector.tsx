@@ -18,9 +18,8 @@ export const AccountSelector = () => {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-48">
-        <DropdownMenuItem>Cambiar cuenta</DropdownMenuItem>
-        <DropdownMenuItem>Configuración</DropdownMenuItem>
-        <DropdownMenuItem className="text-red-600">Cerrar sesión</DropdownMenuItem>
+        <DropdownMenuItem>CSlab</DropdownMenuItem>
+        <DropdownMenuItem>Tank3</DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );
